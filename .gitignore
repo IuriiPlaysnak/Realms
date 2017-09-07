@@ -1,0 +1,6 @@
+Temp/
+Library/
+*.csproj
+.vs/PlaysnakRealms/v14/.suo
+PlaysnakRealms.userprefs
+PlaysnakRealms.sln

@@ -1,0 +1,1198 @@
+fileFormatVersion: 2
+guid: 65e454a3815f99d4ab9e0a760b5c5632
+timeCreated: 1500922037
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: _.li3dsubmesh
+    100002: _.li3dsubmesh 1
+    100004: _.li3dsubmesh 10
+    100006: _.li3dsubmesh 11
+    100008: _.li3dsubmesh 12
+    100010: _.li3dsubmesh 13
+    100012: _.li3dsubmesh 14
+    100014: _.li3dsubmesh 15
+    100016: _.li3dsubmesh 16
+    100018: _.li3dsubmesh 17
+    100020: _.li3dsubmesh 18
+    100022: _.li3dsubmesh 19
+    100024: _.li3dsubmesh 2
+    100026: _.li3dsubmesh 20
+    100028: _.li3dsubmesh 21
+    100030: _.li3dsubmesh 22
+    100032: _.li3dsubmesh 23
+    100034: _.li3dsubmesh 24
+    100036: _.li3dsubmesh 25
+    100038: _.li3dsubmesh 26
+    100040: _.li3dsubmesh 27
+    100042: _.li3dsubmesh 28
+    100044: _.li3dsubmesh 29
+    100046: _.li3dsubmesh 3
+    100048: _.li3dsubmesh 30
+    100050: _.li3dsubmesh 31
+    100052: _.li3dsubmesh 32
+    100054: _.li3dsubmesh 33
+    100056: _.li3dsubmesh 34
+    100058: _.li3dsubmesh 35
+    100060: _.li3dsubmesh 36
+    100062: _.li3dsubmesh 37
+    100064: _.li3dsubmesh 38
+    100066: _.li3dsubmesh 39
+    100068: _.li3dsubmesh 4
+    100070: _.li3dsubmesh 40
+    100072: _.li3dsubmesh 5
+    100074: _.li3dsubmesh 6
+    100076: _.li3dsubmesh 7
+    100078: _.li3dsubmesh 8
+    100080: _.li3dsubmesh 9
+    100082: Component_1
+    100084: Furniture_055A3QZZr2GBEmzWxXUZRA
+    100086: Furniture_0B8bQrisWuHegX4sRRXpYv
+    100088: Furniture_0Ir1MAvZ_bGfwiIF4tqqR5
+    100090: Furniture_0P_iUp4uksHRxLMcEIkt2U
+    100092: Furniture_0ZAs4x7kyyIBg1ul0eesSk
+    100094: Furniture_10PQKFKZc1IwLf4bznd9DT
+    100096: Furniture_1ALeZKyxRxG8j_hDVcKfgX
+    100098: Furniture_1cEYyBB_OVIftf4Kcb0Fui
+    100100: Furniture_1DGRInWasaJR9OrUpO7lJj
+    100102: Furniture_1mq5ysh5MgJ9u_Q5jhQdKU
+    100104: Furniture_1Tl4J9D__QJvRK3hVT9AGf
+    100106: Furniture_28aOEWh7VhJAgUqXUfDqNS
+    100108: Furniture_2_jm_gd1ywGRwurx7kIfsn
+    100110: Furniture_2EPpoRR5ofJupLnI2mAwbg
+    100112: Furniture_2KvwzzH38wIvBx5W8MTVIq
+    100114: Furniture_2MXLa_T_6_IA7iGGRj7AB8
+    100116: Furniture_2sUJztrqLqGvuUFI5JVzlu
+    100118: Furniture_2X_Lw8kDnnIwNZfWg7HoPu
+    100120: Furniture_37EggdjRy3HPlUQKPOBLEp
+    100122: Furniture_387Y3gBujTIuUiG9kfm4C9
+    100124: Furniture_38DZrTohB_HuICMYttUcil
+    100126: Furniture_394S4fAY84JPG1TzpUAHeu
+    100128: Furniture_3GoqImf3kPJuqZfWBGqa2f
+    100130: Furniture_3LTqmOmCisJA7OOpmbF_fn
+    100132: Furniture_3mBldg2CxTHvKAhO_7d78G
+    100134: Furniture_3nafyMWmiQHwULWErT0BCO
+    100136: Furniture_3noVi2Bz9kHxe1LqdIcELH
+    100138: Furniture_3OKXkDgkr_H887avGK7L7h
+    100140: Furniture_3RPjDJLr79Jxmd0xMvTJ3s
+    100142: Furniture_3TgBg0mbKiJuoT2WQDc43a
+    100144: Furniture_3wQMN9D_bpGuinJ7TRsJpX
+    100146: Furniture_3xogfD0r3GGgBo6Wg6jpnk
+    100148: Group_04S_qIDr78GRGxytiwGBfB
+    100150: Group_0bkIbvg4UQJwvqYsC58g_q
+    100152: Group_2IfxbrE8V7Ju5l6vrNEALG
+    100154: ID100
+    100156: ID1002
+    100158: ID1016
+    100160: ID1030
+    100162: ID1047
+    100164: ID1060
+    100166: ID1066
+    100168: ID1072
+    100170: ID1085
+    100172: ID1100
+    100174: ID1113
+    100176: ID1119
+    100178: ID1125
+    100180: ID113
+    100182: ID1138
+    100184: ID1152
+    100186: ID1158
+    100188: ID1172
+    100190: ID1178
+    100192: ID1195
+    100194: ID1201
+    100196: ID1214
+    100198: ID1220
+    100200: ID1235
+    100202: ID1241
+    100204: ID1254
+    100206: ID126
+    100208: ID1260
+    100210: ID1275
+    100212: ID1281
+    100214: ID1294
+    100216: ID1300
+    100218: ID1315
+    100220: ID132
+    100222: ID1321
+    100224: ID1334
+    100226: ID1340
+    100228: ID138
+    100230: ID144
+    100232: ID150
+    100234: ID156
+    100236: ID162
+    100238: ID168
+    100240: ID174
+    100242: ID180
+    100244: ID186
+    100246: ID192
+    100248: ID198
+    100250: ID213
+    100252: ID219
+    100254: ID22
+    100256: ID225
+    100258: ID240
+    100260: ID255
+    100262: ID268
+    100264: ID274
+    100266: ID280
+    100268: ID293
+    100270: ID299
+    100272: ID305
+    100274: ID311
+    100276: ID317
+    100278: ID323
+    100280: ID329
+    100282: ID342
+    100284: ID348
+    100286: ID354
+    100288: ID360
+    100290: ID366
+    100292: ID37
+    100294: ID372
+    100296: ID378
+    100298: ID384
+    100300: ID390
+    100302: ID403
+    100304: ID409
+    100306: ID415
+    100308: ID428
+    100310: ID43
+    100312: ID442
+    100314: ID448
+    100316: ID462
+    100318: ID468
+    100320: ID482
+    100322: ID49
+    100324: ID496
+    100326: ID511
+    100328: ID517
+    100330: ID523
+    100332: ID529
+    100334: ID535
+    100336: ID541
+    100338: ID547
+    100340: ID553
+    100342: ID585
+    100344: ID591
+    100346: ID605
+    100348: ID611
+    100350: ID625
+    100352: ID639
+    100354: ID64
+    100356: ID654
+    100358: ID667
+    100360: ID673
+    100362: ID679
+    100364: ID685
+    100366: ID70
+    100368: ID700
+    100370: ID713
+    100372: ID719
+    100374: ID725
+    100376: ID731
+    100378: ID745
+    100380: ID751
+    100382: ID76
+    100384: ID765
+    100386: ID771
+    100388: ID785
+    100390: ID799
+    100392: ID814
+    100394: ID82
+    100396: ID827
+    100398: ID833
+    100400: ID839
+    100402: ID845
+    100404: ID860
+    100406: ID873
+    100408: ID879
+    100410: ID88
+    100412: ID885
+    100414: ID891
+    100416: ID906
+    100418: ID912
+    100420: ID918
+    100422: ID924
+    100424: ID930
+    100426: ID936
+    100428: ID94
+    100430: ID942
+    100432: ID948
+    100434: ID976
+    100436: ID982
+    100438: ID996
+    100440: instance_0
+    100442: instance_1
+    100444: instance_10
+    100446: instance_11
+    100448: instance_12
+    100450: instance_13
+    100452: instance_14
+    100454: instance_15
+    100456: instance_16
+    100458: instance_17
+    100460: instance_18
+    100462: instance_19
+    100464: instance_2
+    100466: instance_20
+    100468: instance_21
+    100470: instance_22
+    100472: instance_23
+    100474: instance_24
+    100476: instance_25
+    100478: instance_26
+    100480: instance_27
+    100482: instance_28
+    100484: instance_29
+    100486: instance_3
+    100488: instance_30
+    100490: instance_31
+    100492: instance_32
+    100494: instance_33
+    100496: instance_34
+    100498: instance_35
+    100500: instance_4
+    100502: instance_5
+    100504: instance_6
+    100506: instance_7
+    100508: instance_8
+    100510: instance_9
+    100512: //RootNode
+    100514: skp_camera_Last_Saved_SketchUp_View
+    400000: _.li3dsubmesh
+    400002: _.li3dsubmesh 1
+    400004: _.li3dsubmesh 10
+    400006: _.li3dsubmesh 11
+    400008: _.li3dsubmesh 12
+    400010: _.li3dsubmesh 13
+    400012: _.li3dsubmesh 14
+    400014: _.li3dsubmesh 15
+    400016: _.li3dsubmesh 16
+    400018: _.li3dsubmesh 17
+    400020: _.li3dsubmesh 18
+    400022: _.li3dsubmesh 19
+    400024: _.li3dsubmesh 2
+    400026: _.li3dsubmesh 20
+    400028: _.li3dsubmesh 21
+    400030: _.li3dsubmesh 22
+    400032: _.li3dsubmesh 23
+    400034: _.li3dsubmesh 24
+    400036: _.li3dsubmesh 25
+    400038: _.li3dsubmesh 26
+    400040: _.li3dsubmesh 27
+    400042: _.li3dsubmesh 28
+    400044: _.li3dsubmesh 29
+    400046: _.li3dsubmesh 3
+    400048: _.li3dsubmesh 30
+    400050: _.li3dsubmesh 31
+    400052: _.li3dsubmesh 32
+    400054: _.li3dsubmesh 33
+    400056: _.li3dsubmesh 34
+    400058: _.li3dsubmesh 35
+    400060: _.li3dsubmesh 36
+    400062: _.li3dsubmesh 37
+    400064: _.li3dsubmesh 38
+    400066: _.li3dsubmesh 39
+    400068: _.li3dsubmesh 4
+    400070: _.li3dsubmesh 40
+    400072: _.li3dsubmesh 5
+    400074: _.li3dsubmesh 6
+    400076: _.li3dsubmesh 7
+    400078: _.li3dsubmesh 8
+    400080: _.li3dsubmesh 9
+    400082: Component_1
+    400084: Furniture_055A3QZZr2GBEmzWxXUZRA
+    400086: Furniture_0B8bQrisWuHegX4sRRXpYv
+    400088: Furniture_0Ir1MAvZ_bGfwiIF4tqqR5
+    400090: Furniture_0P_iUp4uksHRxLMcEIkt2U
+    400092: Furniture_0ZAs4x7kyyIBg1ul0eesSk
+    400094: Furniture_10PQKFKZc1IwLf4bznd9DT
+    400096: Furniture_1ALeZKyxRxG8j_hDVcKfgX
+    400098: Furniture_1cEYyBB_OVIftf4Kcb0Fui
+    400100: Furniture_1DGRInWasaJR9OrUpO7lJj
+    400102: Furniture_1mq5ysh5MgJ9u_Q5jhQdKU
+    400104: Furniture_1Tl4J9D__QJvRK3hVT9AGf
+    400106: Furniture_28aOEWh7VhJAgUqXUfDqNS
+    400108: Furniture_2_jm_gd1ywGRwurx7kIfsn
+    400110: Furniture_2EPpoRR5ofJupLnI2mAwbg
+    400112: Furniture_2KvwzzH38wIvBx5W8MTVIq
+    400114: Furniture_2MXLa_T_6_IA7iGGRj7AB8
+    400116: Furniture_2sUJztrqLqGvuUFI5JVzlu
+    400118: Furniture_2X_Lw8kDnnIwNZfWg7HoPu
+    400120: Furniture_37EggdjRy3HPlUQKPOBLEp
+    400122: Furniture_387Y3gBujTIuUiG9kfm4C9
+    400124: Furniture_38DZrTohB_HuICMYttUcil
+    400126: Furniture_394S4fAY84JPG1TzpUAHeu
+    400128: Furniture_3GoqImf3kPJuqZfWBGqa2f
+    400130: Furniture_3LTqmOmCisJA7OOpmbF_fn
+    400132: Furniture_3mBldg2CxTHvKAhO_7d78G
+    400134: Furniture_3nafyMWmiQHwULWErT0BCO
+    400136: Furniture_3noVi2Bz9kHxe1LqdIcELH
+    400138: Furniture_3OKXkDgkr_H887avGK7L7h
+    400140: Furniture_3RPjDJLr79Jxmd0xMvTJ3s
+    400142: Furniture_3TgBg0mbKiJuoT2WQDc43a
+    400144: Furniture_3wQMN9D_bpGuinJ7TRsJpX
+    400146: Furniture_3xogfD0r3GGgBo6Wg6jpnk
+    400148: Group_04S_qIDr78GRGxytiwGBfB
+    400150: Group_0bkIbvg4UQJwvqYsC58g_q
+    400152: Group_2IfxbrE8V7Ju5l6vrNEALG
+    400154: ID100
+    400156: ID1002
+    400158: ID1016
+    400160: ID1030
+    400162: ID1047
+    400164: ID1060
+    400166: ID1066
+    400168: ID1072
+    400170: ID1085
+    400172: ID1100
+    400174: ID1113
+    400176: ID1119
+    400178: ID1125
+    400180: ID113
+    400182: ID1138
+    400184: ID1152
+    400186: ID1158
+    400188: ID1172
+    400190: ID1178
+    400192: ID1195
+    400194: ID1201
+    400196: ID1214
+    400198: ID1220
+    400200: ID1235
+    400202: ID1241
+    400204: ID1254
+    400206: ID126
+    400208: ID1260
+    400210: ID1275
+    400212: ID1281
+    400214: ID1294
+    400216: ID1300
+    400218: ID1315
+    400220: ID132
+    400222: ID1321
+    400224: ID1334
+    400226: ID1340
+    400228: ID138
+    400230: ID144
+    400232: ID150
+    400234: ID156
+    400236: ID162
+    400238: ID168
+    400240: ID174
+    400242: ID180
+    400244: ID186
+    400246: ID192
+    400248: ID198
+    400250: ID213
+    400252: ID219
+    400254: ID22
+    400256: ID225
+    400258: ID240
+    400260: ID255
+    400262: ID268
+    400264: ID274
+    400266: ID280
+    400268: ID293
+    400270: ID299
+    400272: ID305
+    400274: ID311
+    400276: ID317
+    400278: ID323
+    400280: ID329
+    400282: ID342
+    400284: ID348
+    400286: ID354
+    400288: ID360
+    400290: ID366
+    400292: ID37
+    400294: ID372
+    400296: ID378
+    400298: ID384
+    400300: ID390
+    400302: ID403
+    400304: ID409
+    400306: ID415
+    400308: ID428
+    400310: ID43
+    400312: ID442
+    400314: ID448
+    400316: ID462
+    400318: ID468
+    400320: ID482
+    400322: ID49
+    400324: ID496
+    400326: ID511
+    400328: ID517
+    400330: ID523
+    400332: ID529
+    400334: ID535
+    400336: ID541
+    400338: ID547
+    400340: ID553
+    400342: ID585
+    400344: ID591
+    400346: ID605
+    400348: ID611
+    400350: ID625
+    400352: ID639
+    400354: ID64
+    400356: ID654
+    400358: ID667
+    400360: ID673
+    400362: ID679
+    400364: ID685
+    400366: ID70
+    400368: ID700
+    400370: ID713
+    400372: ID719
+    400374: ID725
+    400376: ID731
+    400378: ID745
+    400380: ID751
+    400382: ID76
+    400384: ID765
+    400386: ID771
+    400388: ID785
+    400390: ID799
+    400392: ID814
+    400394: ID82
+    400396: ID827
+    400398: ID833
+    400400: ID839
+    400402: ID845
+    400404: ID860
+    400406: ID873
+    400408: ID879
+    400410: ID88
+    400412: ID885
+    400414: ID891
+    400416: ID906
+    400418: ID912
+    400420: ID918
+    400422: ID924
+    400424: ID930
+    400426: ID936
+    400428: ID94
+    400430: ID942
+    400432: ID948
+    400434: ID976
+    400436: ID982
+    400438: ID996
+    400440: instance_0
+    400442: instance_1
+    400444: instance_10
+    400446: instance_11
+    400448: instance_12
+    400450: instance_13
+    400452: instance_14
+    400454: instance_15
+    400456: instance_16
+    400458: instance_17
+    400460: instance_18
+    400462: instance_19
+    400464: instance_2
+    400466: instance_20
+    400468: instance_21
+    400470: instance_22
+    400472: instance_23
+    400474: instance_24
+    400476: instance_25
+    400478: instance_26
+    400480: instance_27
+    400482: instance_28
+    400484: instance_29
+    400486: instance_3
+    400488: instance_30
+    400490: instance_31
+    400492: instance_32
+    400494: instance_33
+    400496: instance_34
+    400498: instance_35
+    400500: instance_4
+    400502: instance_5
+    400504: instance_6
+    400506: instance_7
+    400508: instance_8
+    400510: instance_9
+    400512: //RootNode
+    400514: skp_camera_Last_Saved_SketchUp_View
+    2300000: _.li3dsubmesh
+    2300002: _.li3dsubmesh 1
+    2300004: _.li3dsubmesh 10
+    2300006: _.li3dsubmesh 11
+    2300008: _.li3dsubmesh 12
+    2300010: _.li3dsubmesh 13
+    2300012: _.li3dsubmesh 14
+    2300014: _.li3dsubmesh 15
+    2300016: _.li3dsubmesh 16
+    2300018: _.li3dsubmesh 17
+    2300020: _.li3dsubmesh 18
+    2300022: _.li3dsubmesh 19
+    2300024: _.li3dsubmesh 2
+    2300026: _.li3dsubmesh 20
+    2300028: _.li3dsubmesh 21
+    2300030: _.li3dsubmesh 22
+    2300032: _.li3dsubmesh 23
+    2300034: _.li3dsubmesh 24
+    2300036: _.li3dsubmesh 25
+    2300038: _.li3dsubmesh 26
+    2300040: _.li3dsubmesh 27
+    2300042: _.li3dsubmesh 28
+    2300044: _.li3dsubmesh 29
+    2300046: _.li3dsubmesh 3
+    2300048: _.li3dsubmesh 30
+    2300050: _.li3dsubmesh 31
+    2300052: _.li3dsubmesh 32
+    2300054: _.li3dsubmesh 33
+    2300056: _.li3dsubmesh 34
+    2300058: _.li3dsubmesh 35
+    2300060: _.li3dsubmesh 36
+    2300062: _.li3dsubmesh 37
+    2300064: _.li3dsubmesh 38
+    2300066: _.li3dsubmesh 39
+    2300068: _.li3dsubmesh 4
+    2300070: _.li3dsubmesh 40
+    2300072: _.li3dsubmesh 5
+    2300074: _.li3dsubmesh 6
+    2300076: _.li3dsubmesh 7
+    2300078: _.li3dsubmesh 8
+    2300080: _.li3dsubmesh 9
+    2300082: Furniture_055A3QZZr2GBEmzWxXUZRA
+    2300084: Furniture_0B8bQrisWuHegX4sRRXpYv
+    2300086: Furniture_0Ir1MAvZ_bGfwiIF4tqqR5
+    2300088: Furniture_0ZAs4x7kyyIBg1ul0eesSk
+    2300090: Furniture_1ALeZKyxRxG8j_hDVcKfgX
+    2300092: Furniture_1DGRInWasaJR9OrUpO7lJj
+    2300094: Furniture_1mq5ysh5MgJ9u_Q5jhQdKU
+    2300096: Furniture_1Tl4J9D__QJvRK3hVT9AGf
+    2300098: Furniture_2_jm_gd1ywGRwurx7kIfsn
+    2300100: Furniture_2EPpoRR5ofJupLnI2mAwbg
+    2300102: Furniture_2KvwzzH38wIvBx5W8MTVIq
+    2300104: Furniture_2sUJztrqLqGvuUFI5JVzlu
+    2300106: Furniture_38DZrTohB_HuICMYttUcil
+    2300108: Furniture_3mBldg2CxTHvKAhO_7d78G
+    2300110: Furniture_3OKXkDgkr_H887avGK7L7h
+    2300112: Furniture_3TgBg0mbKiJuoT2WQDc43a
+    2300114: Furniture_3wQMN9D_bpGuinJ7TRsJpX
+    2300116: Furniture_3xogfD0r3GGgBo6Wg6jpnk
+    2300118: ID100
+    2300120: ID1002
+    2300122: ID1016
+    2300124: ID1030
+    2300126: ID1047
+    2300128: ID1060
+    2300130: ID1066
+    2300132: ID1072
+    2300134: ID1085
+    2300136: ID1100
+    2300138: ID1113
+    2300140: ID1119
+    2300142: ID1125
+    2300144: ID113
+    2300146: ID1138
+    2300148: ID1152
+    2300150: ID1158
+    2300152: ID1172
+    2300154: ID1178
+    2300156: ID1195
+    2300158: ID1201
+    2300160: ID1214
+    2300162: ID1220
+    2300164: ID1235
+    2300166: ID1241
+    2300168: ID1254
+    2300170: ID126
+    2300172: ID1260
+    2300174: ID1275
+    2300176: ID1281
+    2300178: ID1294
+    2300180: ID1300
+    2300182: ID1315
+    2300184: ID132
+    2300186: ID1321
+    2300188: ID1334
+    2300190: ID1340
+    2300192: ID138
+    2300194: ID144
+    2300196: ID150
+    2300198: ID156
+    2300200: ID162
+    2300202: ID168
+    2300204: ID174
+    2300206: ID180
+    2300208: ID186
+    2300210: ID192
+    2300212: ID198
+    2300214: ID213
+    2300216: ID219
+    2300218: ID22
+    2300220: ID225
+    2300222: ID240
+    2300224: ID255
+    2300226: ID268
+    2300228: ID274
+    2300230: ID280
+    2300232: ID293
+    2300234: ID299
+    2300236: ID305
+    2300238: ID311
+    2300240: ID317
+    2300242: ID323
+    2300244: ID329
+    2300246: ID342
+    2300248: ID348
+    2300250: ID354
+    2300252: ID360
+    2300254: ID366
+    2300256: ID37
+    2300258: ID372
+    2300260: ID378
+    2300262: ID384
+    2300264: ID390
+    2300266: ID403
+    2300268: ID409
+    2300270: ID415
+    2300272: ID428
+    2300274: ID43
+    2300276: ID442
+    2300278: ID448
+    2300280: ID462
+    2300282: ID468
+    2300284: ID482
+    2300286: ID49
+    2300288: ID496
+    2300290: ID511
+    2300292: ID517
+    2300294: ID523
+    2300296: ID529
+    2300298: ID535
+    2300300: ID541
+    2300302: ID547
+    2300304: ID553
+    2300306: ID585
+    2300308: ID591
+    2300310: ID605
+    2300312: ID611
+    2300314: ID625
+    2300316: ID639
+    2300318: ID64
+    2300320: ID654
+    2300322: ID667
+    2300324: ID673
+    2300326: ID679
+    2300328: ID685
+    2300330: ID70
+    2300332: ID700
+    2300334: ID713
+    2300336: ID719
+    2300338: ID725
+    2300340: ID731
+    2300342: ID745
+    2300344: ID751
+    2300346: ID76
+    2300348: ID765
+    2300350: ID771
+    2300352: ID785
+    2300354: ID799
+    2300356: ID814
+    2300358: ID82
+    2300360: ID827
+    2300362: ID833
+    2300364: ID839
+    2300366: ID845
+    2300368: ID860
+    2300370: ID873
+    2300372: ID879
+    2300374: ID88
+    2300376: ID885
+    2300378: ID891
+    2300380: ID906
+    2300382: ID912
+    2300384: ID918
+    2300386: ID924
+    2300388: ID930
+    2300390: ID936
+    2300392: ID94
+    2300394: ID942
+    2300396: ID948
+    2300398: ID976
+    2300400: ID982
+    2300402: ID996
+    3300000: _.li3dsubmesh
+    3300002: _.li3dsubmesh 1
+    3300004: _.li3dsubmesh 10
+    3300006: _.li3dsubmesh 11
+    3300008: _.li3dsubmesh 12
+    3300010: _.li3dsubmesh 13
+    3300012: _.li3dsubmesh 14
+    3300014: _.li3dsubmesh 15
+    3300016: _.li3dsubmesh 16
+    3300018: _.li3dsubmesh 17
+    3300020: _.li3dsubmesh 18
+    3300022: _.li3dsubmesh 19
+    3300024: _.li3dsubmesh 2
+    3300026: _.li3dsubmesh 20
+    3300028: _.li3dsubmesh 21
+    3300030: _.li3dsubmesh 22
+    3300032: _.li3dsubmesh 23
+    3300034: _.li3dsubmesh 24
+    3300036: _.li3dsubmesh 25
+    3300038: _.li3dsubmesh 26
+    3300040: _.li3dsubmesh 27
+    3300042: _.li3dsubmesh 28
+    3300044: _.li3dsubmesh 29
+    3300046: _.li3dsubmesh 3
+    3300048: _.li3dsubmesh 30
+    3300050: _.li3dsubmesh 31
+    3300052: _.li3dsubmesh 32
+    3300054: _.li3dsubmesh 33
+    3300056: _.li3dsubmesh 34
+    3300058: _.li3dsubmesh 35
+    3300060: _.li3dsubmesh 36
+    3300062: _.li3dsubmesh 37
+    3300064: _.li3dsubmesh 38
+    3300066: _.li3dsubmesh 39
+    3300068: _.li3dsubmesh 4
+    3300070: _.li3dsubmesh 40
+    3300072: _.li3dsubmesh 5
+    3300074: _.li3dsubmesh 6
+    3300076: _.li3dsubmesh 7
+    3300078: _.li3dsubmesh 8
+    3300080: _.li3dsubmesh 9
+    3300082: Furniture_055A3QZZr2GBEmzWxXUZRA
+    3300084: Furniture_0B8bQrisWuHegX4sRRXpYv
+    3300086: Furniture_0Ir1MAvZ_bGfwiIF4tqqR5
+    3300088: Furniture_0ZAs4x7kyyIBg1ul0eesSk
+    3300090: Furniture_1ALeZKyxRxG8j_hDVcKfgX
+    3300092: Furniture_1DGRInWasaJR9OrUpO7lJj
+    3300094: Furniture_1mq5ysh5MgJ9u_Q5jhQdKU
+    3300096: Furniture_1Tl4J9D__QJvRK3hVT9AGf
+    3300098: Furniture_2_jm_gd1ywGRwurx7kIfsn
+    3300100: Furniture_2EPpoRR5ofJupLnI2mAwbg
+    3300102: Furniture_2KvwzzH38wIvBx5W8MTVIq
+    3300104: Furniture_2sUJztrqLqGvuUFI5JVzlu
+    3300106: Furniture_38DZrTohB_HuICMYttUcil
+    3300108: Furniture_3mBldg2CxTHvKAhO_7d78G
+    3300110: Furniture_3OKXkDgkr_H887avGK7L7h
+    3300112: Furniture_3TgBg0mbKiJuoT2WQDc43a
+    3300114: Furniture_3wQMN9D_bpGuinJ7TRsJpX
+    3300116: Furniture_3xogfD0r3GGgBo6Wg6jpnk
+    3300118: ID100
+    3300120: ID1002
+    3300122: ID1016
+    3300124: ID1030
+    3300126: ID1047
+    3300128: ID1060
+    3300130: ID1066
+    3300132: ID1072
+    3300134: ID1085
+    3300136: ID1100
+    3300138: ID1113
+    3300140: ID1119
+    3300142: ID1125
+    3300144: ID113
+    3300146: ID1138
+    3300148: ID1152
+    3300150: ID1158
+    3300152: ID1172
+    3300154: ID1178
+    3300156: ID1195
+    3300158: ID1201
+    3300160: ID1214
+    3300162: ID1220
+    3300164: ID1235
+    3300166: ID1241
+    3300168: ID1254
+    3300170: ID126
+    3300172: ID1260
+    3300174: ID1275
+    3300176: ID1281
+    3300178: ID1294
+    3300180: ID1300
+    3300182: ID1315
+    3300184: ID132
+    3300186: ID1321
+    3300188: ID1334
+    3300190: ID1340
+    3300192: ID138
+    3300194: ID144
+    3300196: ID150
+    3300198: ID156
+    3300200: ID162
+    3300202: ID168
+    3300204: ID174
+    3300206: ID180
+    3300208: ID186
+    3300210: ID192
+    3300212: ID198
+    3300214: ID213
+    3300216: ID219
+    3300218: ID22
+    3300220: ID225
+    3300222: ID240
+    3300224: ID255
+    3300226: ID268
+    3300228: ID274
+    3300230: ID280
+    3300232: ID293
+    3300234: ID299
+    3300236: ID305
+    3300238: ID311
+    3300240: ID317
+    3300242: ID323
+    3300244: ID329
+    3300246: ID342
+    3300248: ID348
+    3300250: ID354
+    3300252: ID360
+    3300254: ID366
+    3300256: ID37
+    3300258: ID372
+    3300260: ID378
+    3300262: ID384
+    3300264: ID390
+    3300266: ID403
+    3300268: ID409
+    3300270: ID415
+    3300272: ID428
+    3300274: ID43
+    3300276: ID442
+    3300278: ID448
+    3300280: ID462
+    3300282: ID468
+    3300284: ID482
+    3300286: ID49
+    3300288: ID496
+    3300290: ID511
+    3300292: ID517
+    3300294: ID523
+    3300296: ID529
+    3300298: ID535
+    3300300: ID541
+    3300302: ID547
+    3300304: ID553
+    3300306: ID585
+    3300308: ID591
+    3300310: ID605
+    3300312: ID611
+    3300314: ID625
+    3300316: ID639
+    3300318: ID64
+    3300320: ID654
+    3300322: ID667
+    3300324: ID673
+    3300326: ID679
+    3300328: ID685
+    3300330: ID70
+    3300332: ID700
+    3300334: ID713
+    3300336: ID719
+    3300338: ID725
+    3300340: ID731
+    3300342: ID745
+    3300344: ID751
+    3300346: ID76
+    3300348: ID765
+    3300350: ID771
+    3300352: ID785
+    3300354: ID799
+    3300356: ID814
+    3300358: ID82
+    3300360: ID827
+    3300362: ID833
+    3300364: ID839
+    3300366: ID845
+    3300368: ID860
+    3300370: ID873
+    3300372: ID879
+    3300374: ID88
+    3300376: ID885
+    3300378: ID891
+    3300380: ID906
+    3300382: ID912
+    3300384: ID918
+    3300386: ID924
+    3300388: ID930
+    3300390: ID936
+    3300392: ID94
+    3300394: ID942
+    3300396: ID948
+    3300398: ID976
+    3300400: ID982
+    3300402: ID996
+    4300000: _.li3dsubmesh
+    4300002: ID22
+    4300004: _.li3dsubmesh
+    4300006: ID37
+    4300008: ID43
+    4300010: ID49
+    4300012: _.li3dsubmesh
+    4300014: ID64
+    4300016: ID70
+    4300018: ID76
+    4300020: ID82
+    4300022: ID88
+    4300024: ID94
+    4300026: ID100
+    4300028: _.li3dsubmesh
+    4300030: ID113
+    4300032: _.li3dsubmesh
+    4300034: ID126
+    4300036: ID132
+    4300038: ID138
+    4300040: ID144
+    4300042: ID150
+    4300044: ID156
+    4300046: ID162
+    4300048: ID168
+    4300050: ID174
+    4300052: ID180
+    4300054: ID186
+    4300056: ID192
+    4300058: ID198
+    4300060: _.li3dsubmesh
+    4300062: ID213
+    4300064: ID219
+    4300066: ID225
+    4300068: _.li3dsubmesh
+    4300070: ID240
+    4300072: _.li3dsubmesh
+    4300074: ID255
+    4300076: _.li3dsubmesh
+    4300078: ID268
+    4300080: ID274
+    4300082: ID280
+    4300084: _.li3dsubmesh
+    4300086: ID293
+    4300088: ID299
+    4300090: ID305
+    4300092: ID311
+    4300094: ID317
+    4300096: ID323
+    4300098: ID329
+    4300100: _.li3dsubmesh
+    4300102: ID342
+    4300104: ID348
+    4300106: ID354
+    4300108: ID360
+    4300110: ID366
+    4300112: ID372
+    4300114: ID378
+    4300116: ID384
+    4300118: ID390
+    4300120: _.li3dsubmesh
+    4300122: ID403
+    4300124: ID409
+    4300126: ID415
+    4300128: _.li3dsubmesh
+    4300130: ID428
+    4300132: Furniture_0Ir1MAvZ_bGfwiIF4tqqR5
+    4300134: ID442
+    4300136: ID448
+    4300138: Furniture_3xogfD0r3GGgBo6Wg6jpnk
+    4300140: ID462
+    4300142: ID468
+    4300144: Furniture_3OKXkDgkr_H887avGK7L7h
+    4300146: ID482
+    4300148: Furniture_3mBldg2CxTHvKAhO_7d78G
+    4300150: ID496
+    4300152: _.li3dsubmesh
+    4300154: ID511
+    4300156: ID517
+    4300158: ID523
+    4300160: ID529
+    4300162: ID535
+    4300164: ID541
+    4300166: ID547
+    4300168: ID553
+    4300170: _.li3dsubmesh
+    4300172: _.li3dsubmesh
+    4300174: Furniture_1mq5ysh5MgJ9u_Q5jhQdKU
+    4300176: ID585
+    4300178: ID591
+    4300180: Furniture_1DGRInWasaJR9OrUpO7lJj
+    4300182: ID605
+    4300184: ID611
+    4300186: Furniture_0B8bQrisWuHegX4sRRXpYv
+    4300188: ID625
+    4300190: Furniture_3wQMN9D_bpGuinJ7TRsJpX
+    4300192: ID639
+    4300194: _.li3dsubmesh
+    4300196: ID654
+    4300198: _.li3dsubmesh
+    4300200: ID667
+    4300202: ID673
+    4300204: ID679
+    4300206: ID685
+    4300208: _.li3dsubmesh
+    4300210: ID700
+    4300212: _.li3dsubmesh
+    4300214: ID713
+    4300216: ID719
+    4300218: ID725
+    4300220: ID731
+    4300222: Furniture_0ZAs4x7kyyIBg1ul0eesSk
+    4300224: ID745
+    4300226: ID751
+    4300228: Furniture_2EPpoRR5ofJupLnI2mAwbg
+    4300230: ID765
+    4300232: ID771
+    4300234: Furniture_2KvwzzH38wIvBx5W8MTVIq
+    4300236: ID785
+    4300238: Furniture_1ALeZKyxRxG8j_hDVcKfgX
+    4300240: ID799
+    4300242: _.li3dsubmesh
+    4300244: ID814
+    4300246: _.li3dsubmesh
+    4300248: ID827
+    4300250: ID833
+    4300252: ID839
+    4300254: ID845
+    4300256: _.li3dsubmesh
+    4300258: ID860
+    4300260: _.li3dsubmesh
+    4300262: ID873
+    4300264: ID879
+    4300266: ID885
+    4300268: ID891
+    4300270: _.li3dsubmesh
+    4300272: ID906
+    4300274: ID912
+    4300276: ID918
+    4300278: ID924
+    4300280: ID930
+    4300282: ID936
+    4300284: ID942
+    4300286: ID948
+    4300288: _.li3dsubmesh
+    4300290: _.li3dsubmesh
+    4300292: Furniture_38DZrTohB_HuICMYttUcil
+    4300294: ID976
+    4300296: ID982
+    4300298: Furniture_3TgBg0mbKiJuoT2WQDc43a
+    4300300: ID996
+    4300302: ID1002
+    4300304: Furniture_2_jm_gd1ywGRwurx7kIfsn
+    4300306: ID1016
+    4300308: Furniture_1Tl4J9D__QJvRK3hVT9AGf
+    4300310: ID1030
+    4300312: _.li3dsubmesh
+    4300314: ID1047
+    4300316: _.li3dsubmesh
+    4300318: ID1060
+    4300320: ID1066
+    4300322: ID1072
+    4300324: _.li3dsubmesh
+    4300326: ID1085
+    4300328: _.li3dsubmesh
+    4300330: ID1100
+    4300332: _.li3dsubmesh
+    4300334: ID1113
+    4300336: ID1119
+    4300338: ID1125
+    4300340: _.li3dsubmesh
+    4300342: ID1138
+    4300344: Furniture_2sUJztrqLqGvuUFI5JVzlu
+    4300346: ID1152
+    4300348: ID1158
+    4300350: Furniture_055A3QZZr2GBEmzWxXUZRA
+    4300352: ID1172
+    4300354: ID1178
+    4300356: _.li3dsubmesh
+    4300358: ID1195
+    4300360: ID1201
+    4300362: _.li3dsubmesh
+    4300364: ID1214
+    4300366: ID1220
+    4300368: _.li3dsubmesh
+    4300370: ID1235
+    4300372: ID1241
+    4300374: _.li3dsubmesh
+    4300376: ID1254
+    4300378: ID1260
+    4300380: _.li3dsubmesh
+    4300382: ID1275
+    4300384: ID1281
+    4300386: _.li3dsubmesh
+    4300388: ID1294
+    4300390: ID1300
+    4300392: _.li3dsubmesh
+    4300394: ID1315
+    4300396: ID1321
+    4300398: _.li3dsubmesh
+    4300400: ID1334
+    4300402: ID1340
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
