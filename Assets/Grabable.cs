@@ -7,9 +7,9 @@ public class Grabable : MonoBehaviour {
 	private const float VELOCITY_MULTIPLIER = 80.0f;
 
     public GameObject Planet;
+	public List<GameObject> Planets;
     public float grabRadius;
     public bool keepUpright;
-    public float initialSpeed;
 
     OVRInput.Controller grabbedBy = OVRInput.Controller.None;
     OVRInput.RawButton grabbedByButton = OVRInput.RawButton.None;
@@ -17,7 +17,6 @@ public class Grabable : MonoBehaviour {
     Quaternion localGrabRotation;
 
 	private SmoothedVector3 _velocitySmoothedVector = new SmoothedVector3 (10);
-
 
     private Rigidbody _rigidbody;
     private SpringJoint _joint;
@@ -84,6 +83,23 @@ public class Grabable : MonoBehaviour {
 				transform.rotation = Quaternion.RotateTowards (transform.rotation, lookTo, Mathf.Max(_rigidbody.velocity.magnitude, 0.5f));
 				if (Quaternion.Angle (transform.rotation, lookTo) <= 1f)
 					transform.rotation = lookTo;
+			}
+
+			if (Planets.Count > 1) {
+
+				float minDistance = Vector3.Distance (transform.position, Planet.transform.position);
+
+				foreach (GameObject planet in Planets) {
+					
+					float distance = Vector3.Distance (transform.position, planet.transform.position);
+					if (distance < minDistance) {
+
+						minDistance = distance;
+						Planet = planet;
+
+						_joint.connectedBody = Planet.GetComponent<Rigidbody>();
+					}
+				}
 			}
 		}
 
