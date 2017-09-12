@@ -17,8 +17,11 @@ public class HandTrack : MonoBehaviour
         originalMaterial = GetComponent<MeshRenderer>().material;
         lineRenderer = GetComponent<LineRenderer>();
 	}
-	
-	// Update is called once per frame
+
+    // Update is called once per frame
+	Grabable _attractableObject;
+	RotatableWithTheBim _rotatableObject;
+	Vector3 _rotationOrigin;
 	void Update ()
     {
         transform.localPosition = OVRInput.GetLocalControllerPosition(controller);
@@ -42,13 +45,38 @@ public class HandTrack : MonoBehaviour
                 lineRenderer.positionCount = 2;
                 lineRenderer.SetPositions(new Vector3[] { transform.position, hitInfo.point });
                 GameObject hitObject = hitInfo.collider.gameObject;
-                GrabOrbitScript orbiter = hitObject.GetComponent<GrabOrbitScript>();
-                if(orbiter != null)
+
+                //GrabOrbitScript orbiter = hitObject.GetComponent<GrabOrbitScript>();
+                //if (orbiter != null)
+                //{
+                //    orbiter.FreezeOrbitUntil(Time.time + 0.1f);
+                //    Vector3 step = (transform.position - orbiter.transform.position).normalized * 0.01f;
+                //    orbiter.tractorBeamVelocity = step;
+                //}
+                //else
+
+				if(_attractableObject == null && _rotatableObject == null)
                 {
-                    orbiter.FreezeOrbitUntil(Time.time + 0.1f);
-                    Vector3 step = (transform.position - orbiter.transform.position).normalized * 0.01f;
-                    orbiter.tractorBeamVelocity = step;
+                    _attractableObject = hitObject.GetComponent<Grabable>();
+                    if (_attractableObject != null)
+                    {
+                        _attractableObject.Attract(true, transform);
+                    }
                 }
+
+				if (_rotatableObject == null) {
+
+					_rotatableObject = hitObject.GetComponent<RotatableWithTheBim> ();
+					if (_rotatableObject != null) {
+						_rotationOrigin = hitInfo.point;
+						_rotatableObject.UpdateRotation (_rotationOrigin, hitInfo.point);
+					}
+				} else {
+
+					_rotatableObject.UpdateRotation (_rotationOrigin, hitInfo.point);
+				}
+
+
             }
             else
             {
@@ -58,6 +86,13 @@ public class HandTrack : MonoBehaviour
         }
         else
         {
+            if (_attractableObject != null)
+                _attractableObject.Attract(false);
+
+            _attractableObject = null;
+
+			_rotatableObject = null;
+
             lineRenderer.positionCount = 0;
             lineRenderer.SetPositions(new Vector3[] { });
         }

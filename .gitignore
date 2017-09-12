@@ -4,3 +4,5 @@ Library/
 .vs/PlaysnakRealms/v14/.suo
 PlaysnakRealms.userprefs
 PlaysnakRealms.sln
+.vs/
+obj/
