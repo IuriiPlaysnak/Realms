@@ -44,8 +44,6 @@ public class Grabable : MonoBehaviour {
 		
     // Update is called once per frame
 
-	private float _timer = -1f;
-
     void Update()
     {
 		Vector3 oldPosition = transform.position;
@@ -75,31 +73,15 @@ public class Grabable : MonoBehaviour {
 			if (keepUpright && _rigidbody.velocity.magnitude > 0) {
 
 				Vector3 upward = transform.position - Planet.transform.position;
-				Vector3 forward = Vector3.ProjectOnPlane (_rigidbody.velocity, upward);
+				Vector3 forward = Vector3.ProjectOnPlane (_rigidbody.velocity * 10, upward);
 
+				if (forward.magnitude < 0.01f) {
+					forward = transform.rotation * Vector3.forward;
+				}
+					
 				Quaternion lookTo = Quaternion.LookRotation (forward, upward);
 
-				/*
-				if (_timer >= 0) {
-
-					_timer += Time.deltaTime;
-
-//					if (_timer >= 2.0f) {
-
-						transform.rotation = Quaternion.RotateTowards (transform.rotation, lookTo, _rigidbody.velocity.magnitude);
-
-						float angle = Quaternion.Angle (transform.rotation, lookTo);
-						if (angle < 1)
-							_timer = -1f;
-//					}
-				} else {
-
-//					transform.rotation = lookTo;
-					transform.rotation = Quaternion.RotateTowards (transform.rotation, lookTo, 1f);
-				}
-				*/
-
-				transform.rotation = Quaternion.RotateTowards (transform.rotation, lookTo, _rigidbody.velocity.magnitude);
+				transform.rotation = Quaternion.RotateTowards (transform.rotation, lookTo, Mathf.Max(_rigidbody.velocity.magnitude, 0.5f));
 				if (Quaternion.Angle (transform.rotation, lookTo) <= 1f)
 					transform.rotation = lookTo;
 			}
@@ -108,7 +90,6 @@ public class Grabable : MonoBehaviour {
         if (grabbedByButton != OVRInput.RawButton.None && OVRInput.GetUp(grabbedByButton))
         {
             // release
-			_timer = 0f;
             grabbedBy = OVRInput.Controller.None;
             grabbedByButton = OVRInput.RawButton.None;
 
