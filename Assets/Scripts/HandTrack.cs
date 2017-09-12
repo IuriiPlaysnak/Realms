@@ -45,16 +45,7 @@ public class HandTrack : MonoBehaviour
                 lineRenderer.positionCount = 2;
                 lineRenderer.SetPositions(new Vector3[] { transform.position, hitInfo.point });
                 GameObject hitObject = hitInfo.collider.gameObject;
-
-                //GrabOrbitScript orbiter = hitObject.GetComponent<GrabOrbitScript>();
-                //if (orbiter != null)
-                //{
-                //    orbiter.FreezeOrbitUntil(Time.time + 0.1f);
-                //    Vector3 step = (transform.position - orbiter.transform.position).normalized * 0.01f;
-                //    orbiter.tractorBeamVelocity = step;
-                //}
-                //else
-
+			
 				if(_attractableObject == null && _rotatableObject == null)
                 {
                     _attractableObject = hitObject.GetComponent<Grabable>();
@@ -69,11 +60,11 @@ public class HandTrack : MonoBehaviour
 					_rotatableObject = hitObject.GetComponent<RotatableWithTheBim> ();
 					if (_rotatableObject != null) {
 						_rotationOrigin = hitInfo.point;
-						_rotatableObject.UpdateRotation (_rotationOrigin, hitInfo.point);
 					}
 				} else {
 
-					_rotatableObject.UpdateRotation (_rotationOrigin, hitInfo.point);
+					Vector3 rotation = Vector3.ProjectOnPlane(transform.position - hitInfo.point, transform.position - hitObject.transform.position);
+					_rotatableObject.UpdateRotation(rotation);
 				}
 
 

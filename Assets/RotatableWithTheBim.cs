@@ -14,12 +14,8 @@ public class RotatableWithTheBim : MonoBehaviour {
 		
 	}
 
-	public void UpdateRotation(Vector3 originPoint, Vector3 currentPoint)
+	public void UpdateRotation(Vector3 rotation) 
 	{
-		float xR = currentPoint.y - originPoint.y;
-		float yR = currentPoint.x - originPoint.x;
-		float zR = 0;
-		transform.Rotate (new Vector3(-xR * 2, yR *2 , zR), Space.World);
-
+		transform.Rotate (new Vector3(rotation.y * 2, -rotation.x * 2 , 0), Space.World);
 	}
 }
