@@ -6,3 +6,4 @@ PlaysnakRealms.userprefs
 PlaysnakRealms.sln
 .vs/
 obj/
+*.unitypackage

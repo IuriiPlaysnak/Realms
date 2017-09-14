@@ -4,24 +4,30 @@ using UnityEngine;
 
 public class Grabable : MonoBehaviour {
 
-	private const float VELOCITY_MULTIPLIER = 80.0f;
+	private const float THROW_VELOCITY_MULTIPLIER = 80.0f;
+	private const float BEAM_RELEASE_VELOCITY_MULTIPLIER = 8.0f;
+	private const OVRInput.Button TRACTOR_BEAM_BUTTON = OVRInput.Button.One;
 
     public GameObject Planet;
 	public List<GameObject> Planets;
     public float grabRadius;
     public bool keepUpright;
+	public Vector3 initVelocity;
 
-    OVRInput.Controller grabbedBy = OVRInput.Controller.None;
-    OVRInput.RawButton grabbedByButton = OVRInput.RawButton.None;
-    Vector3 localGrabOffset;
-    Quaternion localGrabRotation;
+	[HideInInspector]
+	public bool isHitByTractorBeam;
 
-	private SmoothedVector3 _velocitySmoothedVector = new SmoothedVector3 (10);
+	private OVRInput.Controller _grabbedBy = OVRInput.Controller.None;
+	private OVRInput.RawButton _grabbedByButton = OVRInput.RawButton.None;
+	private Vector3 _localGrabOffset;
+	private Quaternion _localGrabRotation;
+
+	private SmoothedVector3 _velocitySmoothedVector;
 
     private Rigidbody _rigidbody;
     private SpringJoint _joint;
 
-	public bool debugVelocity = false;
+	private bool _isAttracted;
 
     private void Awake()
     {
@@ -33,12 +39,14 @@ public class Grabable : MonoBehaviour {
 
 		if (keepUpright)
 			_rigidbody.angularDrag = 0.2f;
+
+		_velocitySmoothedVector = new SmoothedVector3 (10);
     }
 
     // Use this for initialization
     void Start()
     {
-		_rigidbody.AddForce (new Vector3(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f)), ForceMode.Impulse);
+		_rigidbody.AddForce (initVelocity, ForceMode.Impulse);
     }
 		
     // Update is called once per frame
@@ -46,24 +54,24 @@ public class Grabable : MonoBehaviour {
     void Update()
     {
 		Vector3 oldPosition = transform.position;
-		Quaternion oldRotation = transform.rotation;
 
-        if (_attractor != null)
-        {
-            transform.position = Vector3.Lerp(transform.position, _attractor.position, 0.1f);
+		if (_isAttracted) {
+
+			Vector3 controllerPosition = OVRManager.instance.transform.LocalToWorld(OVRInput.GetLocalControllerPosition(OVRInput.Controller.RTouch));
+			transform.position = Vector3.Lerp(transform.position, controllerPosition, 0.1f);
 			_velocitySmoothedVector.AddReading(transform.position - oldPosition);
 			return;
-        }
+		}
 
         CheckGrab(OVRInput.Controller.LTouch, OVRInput.RawButton.LHandTrigger);
         CheckGrab(OVRInput.Controller.RTouch, OVRInput.RawButton.RHandTrigger);
 
-		if (grabbedBy != OVRInput.Controller.None) {
+		if (_grabbedBy != OVRInput.Controller.None) {
 
-			Vector3 handPos = OVRManager.instance.transform.LocalToWorld (OVRInput.GetLocalControllerPosition (grabbedBy));
-			Quaternion handRot = OVRManager.instance.transform.LocalToWorld (OVRInput.GetLocalControllerRotation (grabbedBy));
-			transform.position = handPos + handRot * localGrabOffset;
-			transform.rotation = handRot * localGrabRotation;
+			Vector3 handPos = OVRManager.instance.transform.LocalToWorld (OVRInput.GetLocalControllerPosition (_grabbedBy));
+			Quaternion handRot = OVRManager.instance.transform.LocalToWorld (OVRInput.GetLocalControllerRotation (_grabbedBy));
+			transform.position = handPos + handRot * _localGrabOffset;
+			transform.rotation = handRot * _localGrabRotation;
 
 			_velocitySmoothedVector.AddReading (transform.position - oldPosition);
 
@@ -103,13 +111,13 @@ public class Grabable : MonoBehaviour {
 			}
 		}
 
-        if (grabbedByButton != OVRInput.RawButton.None && OVRInput.GetUp(grabbedByButton))
+        if (_grabbedByButton != OVRInput.RawButton.None && OVRInput.GetUp(_grabbedByButton))
         {
             // release
-            grabbedBy = OVRInput.Controller.None;
-            grabbedByButton = OVRInput.RawButton.None;
+            _grabbedBy = OVRInput.Controller.None;
+            _grabbedByButton = OVRInput.RawButton.None;
 
-			_rigidbody.AddForce(_velocitySmoothedVector.average * VELOCITY_MULTIPLIER, ForceMode.Impulse);
+			_rigidbody.AddForce(_velocitySmoothedVector.average * THROW_VELOCITY_MULTIPLIER, ForceMode.Impulse);
 
 			Vector3 torgue = new Vector3 (_velocitySmoothedVector.average.z, _velocitySmoothedVector.average.y, -_velocitySmoothedVector.average.x);
 			_rigidbody.AddTorque (torgue, ForceMode.Impulse);
@@ -120,8 +128,30 @@ public class Grabable : MonoBehaviour {
 
     private void FixedUpdate()
     {
-		if (debugVelocity)
-			Debug.Log (_rigidbody.velocity);
+		if (isHitByTractorBeam) {
+			
+			if (OVRInput.Get(TRACTOR_BEAM_BUTTON)) {
+				
+				_rigidbody.isKinematic = true;
+				_isAttracted = true;
+
+			} else {
+
+				Vector3 controllerPosition = OVRManager.instance.transform.LocalToWorld(OVRInput.GetLocalControllerPosition(OVRInput.Controller.RTouch));
+				if (_isAttracted && Vector3.Distance (transform.position, controllerPosition) > 0.2f) {
+					
+					_rigidbody.AddForce(_velocitySmoothedVector.average * BEAM_RELEASE_VELOCITY_MULTIPLIER, ForceMode.Impulse);
+					_velocitySmoothedVector.Clear();
+				}
+
+				_rigidbody.isKinematic = false;
+				_isAttracted = false;
+			}
+		} else {
+			
+			_rigidbody.isKinematic = false;
+			_isAttracted = false;
+		}
     }
 
     void CheckGrab(OVRInput.Controller hand, OVRInput.RawButton button)
@@ -134,29 +164,12 @@ public class Grabable : MonoBehaviour {
             {
                 Quaternion invTouchRot = Quaternion.Inverse(OVRManager.instance.transform.LocalToWorld(OVRInput.GetLocalControllerRotation(hand)));
 
-                grabbedBy = hand;
-                grabbedByButton = button;
-                localGrabOffset = invTouchRot * (transform.position - touchPos);
-                localGrabRotation = invTouchRot * transform.rotation;
+                _grabbedBy = hand;
+                _grabbedByButton = button;
+                _localGrabOffset = invTouchRot * (transform.position - touchPos);
+                _localGrabRotation = invTouchRot * transform.rotation;
                 _velocitySmoothedVector.Clear();
             }
         }
-    }
-
-    private Transform _attractor;
-    public void Attract(bool isAttracting, Transform attractor = null)
-    {
-		_rigidbody.isKinematic = isAttracting;
-
-		if (isAttracting == false) 
-		{
-			if (Vector3.Distance (transform.position, _attractor.position) > 0.2f) 
-			{
-				_rigidbody.AddForce(_velocitySmoothedVector.average * VELOCITY_MULTIPLIER / 10.0f, ForceMode.Impulse);
-				_velocitySmoothedVector.Clear();
-			}
-		}
-
-        _attractor = attractor;
     }
 }

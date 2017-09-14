@@ -7,6 +7,8 @@ public class HandTrack : MonoBehaviour
     public OVRInput.Controller controller;
     public OVRInput.RawButton button;
     public OVRInput.RawButton tractorBeamButton;
+	public PlanetsSystem planetsSystem;
+	public OVRInput.Button trigger;
     public Material gripMaterial;
     Material originalMaterial;
     LineRenderer lineRenderer;
@@ -51,7 +53,7 @@ public class HandTrack : MonoBehaviour
                     _attractableObject = hitObject.GetComponent<Grabable>();
                     if (_attractableObject != null)
                     {
-                        _attractableObject.Attract(true, transform);
+						_attractableObject.isHitByTractorBeam = true;
                     }
                 }
 
@@ -65,9 +67,11 @@ public class HandTrack : MonoBehaviour
 
 					Vector3 rotation = Vector3.ProjectOnPlane(transform.position - hitInfo.point, transform.position - hitObject.transform.position);
 					_rotatableObject.UpdateRotation(rotation);
+
+					if (OVRInput.GetDown(trigger)) {
+						planetsSystem.UpdatePosition(hitObject.transform);
+					}
 				}
-
-
             }
             else
             {
@@ -78,7 +82,7 @@ public class HandTrack : MonoBehaviour
         else
         {
             if (_attractableObject != null)
-                _attractableObject.Attract(false);
+				_attractableObject.isHitByTractorBeam = false;
 
             _attractableObject = null;
 
